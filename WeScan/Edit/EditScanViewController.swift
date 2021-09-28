@@ -85,6 +85,8 @@ final class EditScanViewController: UIViewController {
         let touchDown = UILongPressGestureRecognizer(target: zoomGestureController, action: #selector(zoomGestureController.handle(pan:)))
         touchDown.minimumPressDuration = 0
         view.addGestureRecognizer(touchDown)
+        
+        view.backgroundColor = .red
     }
     
     override public func viewDidLayoutSubviews() {
